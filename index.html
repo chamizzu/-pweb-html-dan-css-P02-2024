@@ -4,74 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>UMKM Website</title>
+    <title>Ngopi Sam! - UMKM Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <header>
-        <h1>Our UMKM Website</h1>
+        <nav>
+            <img src="assets/web-logo.png" alt="Ngopi Sam! Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tentang">Tentang Produk</a></li>
+                <li><a href="#layanan">Layanan/Katalog</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#landing">Landing Page</a>
-        <a href="#tentang">Tentang Produk</a>
-        <a href="#layanan">Layanan/Katalog</a>
-        <a href="#galeri">Foto/Galeri</a>
-        <a href="#testimoni">Testimoni</a>
-        <a href="#footer">Contact Us</a>
-    </nav>
 
     <!-- Landing Page -->
-    <section id="landing">
-        <h2>Welcome to Our UMKM Website</h2>
-        <p>Ini adalah halaman utama untuk menarik pengunjung dan memperkenalkan produk kami.</p>
-        <button>Call to Action</button>
+    <section id="home">
+        <div class="container">
+            <h1>Selamat Datang di Ngopi Sam!</h1>
+            <p>Nikmati pengalaman kopi terbaik dengan produk-produk pilihan kami.</p>
+            <a href="#layanan" class="cta-button">Lihat Produk Kami</a>
+        </div>
     </section>
 
     <!-- Tentang Produk -->
     <section id="tentang">
-        <h2>Tentang Produk</h2>
-        <p>Informasi mengenai produk yang ditawarkan oleh UMKM.</p>
+        <div class="container">
+            <h2>Tentang Produk Kami</h2>
+            <p>Ngopi Sam! menyajikan kopi berkualitas tinggi dari biji kopi pilihan yang dipanggang dengan sempurna. Kami berkomitmen untuk memberikan pengalaman kopi terbaik kepada pelanggan kami.</p>
+        </div>
     </section>
 
     <!-- Layanan/Katalog -->
     <section id="layanan">
-        <h2>Layanan/Katalog</h2>
         <div class="container">
-            <div class="card">
-                <h3>Produk 1</h3>
-                <p>Deskripsi produk 1</p>
-            </div>
-            <div class="card">
-                <h3>Produk 2</h3>
-                <p>Deskripsi produk 2</p>
-            </div>
-            <div class="card">
-                <h3>Produk 3</h3>
-                <p>Deskripsi produk 3</p>
+            <h2 class="katalog-produk">Katalog Produk</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kopi Arabika">
+                    </div>
+                    <h3>Kopi Arabika</h3>
+                    <p>Rp 50.000</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1673545518947-ddf3240090b1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kopi Robusta">
+                    </div>
+                    <h3>Kopi Robusta</h3>
+                    <p>Rp 45.000</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1612095437389-d459aee25de4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kopi Luwak">
+                    </div>
+                    <h3>Kopi Luwak</h3>
+                    <p>Rp 100.000</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Foto/Galeri -->
+    <!-- Galeri -->
     <section id="galeri">
-        <h2>Foto/Galeri</h2>
-        <p>Galeri foto produk dan layanan UMKM kami.</p>
-        <!-- Tambahkan foto-foto produk di sini -->
-         <img src="./assets/contoh_img.png" alt="nun">
+        <div class="container">
+            <h2 class="katalog-produk">Galeri</h2>
+            <div class="gallery-grid">
+                <img src="https://plus.unsplash.com/premium_photo-1675237625862-d982e7f44696?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Galeri 1">
+                <img src="https://images.unsplash.com/photo-1640340905889-9381e2396a01?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Galeri 2">
+                <img src="https://images.unsplash.com/photo-1631193144538-d96464dee3d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Galeri 3">
+                <img src="https://images.unsplash.com/photo-1550582823-ec9385a62bde?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Galeri 4">
+                <img src="https://images.unsplash.com/photo-1610474035799-069bb3f3bf50?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image 5">
+                <img src="https://plus.unsplash.com/premium_photo-1674407009848-4da7a12b6b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image 6">
+                <img src="https://images.unsplash.com/photo-1623157873463-34e3cc243165?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image 7">
+                <img src="https://plus.unsplash.com/premium_photo-1675362191731-0b7947b5f1b6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image 8">
+
+            </div>
+        </div>
     </section>
 
     <!-- Testimoni -->
     <section id="testimoni">
-        <h2>Testimoni</h2>
-        <p>Beberapa ulasan dari pelanggan kami.</p>
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Kopi terbaik yang pernah saya coba!"</p>
+                    <h4>- Budi S.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Pelayanan sangat ramah dan kopi selalu segar."</p>
+                    <h4>- Siti R.</h4>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
-        <p>Contact us at: info@umkmwebsite.com</p>
+        <div class="container">
+            <p>&copy; 2023 Ngopi Sam! All rights reserved.</p>
+            <p>Contact us at: info@ngopisam.com</p>
+        </div>
     </footer>
-
 </body>
 </html>
