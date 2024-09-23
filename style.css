@@ -131,7 +131,7 @@ section h2 {
 }
 
 .container .katalog-produk {
-    color: var(--base-content);
+    color: var(--accent-content);
     font-size: 2rem;
 }
 
@@ -139,6 +139,10 @@ section h2 {
 #tentang {
     background-color: var(--accent);
     color: var(--accent-content)
+}
+
+#tentang h2 {
+    font-size: 2rem;
 }
 
 #layanan {
@@ -197,7 +201,7 @@ section h2 {
 
 /* Testimoni Section */
 #testimoni {
-    background-color: #f9f9f9;
+    background-color: var(--neutral-content);
 }
 
 .testimonial-grid {
@@ -207,10 +211,11 @@ section h2 {
 }
 
 .testimonial-card {
-    background-color: #fff;
+    background-color: var(--neutral);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
+    color: var(--neutral-content);
 }
 
 .testimonial-card p {
