@@ -421,6 +421,6 @@ footer {
 
 .catalog-card:hover{
     background-color: var(--base-content);
-    transform: translateY(-5px);
+    transform: scale(1.01,1.01);
     color: var(--base);
 }
