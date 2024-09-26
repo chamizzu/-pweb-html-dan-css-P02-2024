@@ -51,7 +51,7 @@ nav {
 }
 
 .logo {
-    height: 70px;
+    height: 60px;
 }
 
 nav ul {
@@ -263,8 +263,9 @@ footer {
     transition: transform 0.3s ease;
     color: var(--neutral-content);
     display: flex;
-    margin : 0 20rem 5rem 20rem;
+    margin : 0 16rem 5rem 16rem;
     text-align: justify;
+    overflow: hidden;
 }
 
 .product-information:hover {
@@ -272,7 +273,7 @@ footer {
 }
 
 .product-information img {
-    width: max-content;
+    width: fit-content;
     overflow: hidden;
     border-radius: 5px;
     margin-right: 1rem;
@@ -336,4 +337,90 @@ footer {
 
 #tentang-produk hr{
     margin-bottom: 1rem;
+}
+
+/* Layanan Page */
+
+.side {
+    width: 200px;
+    background-color: var(--neutral);
+    color: var(--accent-content);
+    padding: 15px;
+    height: 300vh;
+    margin-top: 15vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.side h2 {
+    color: var(--accent-content);
+}
+
+.side ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side ul li {
+    margin: 10px 0;
+}
+
+.side ul li a {
+    color: var(--accent-content);
+    text-decoration: none;
+}
+
+.side ul li a:hover{
+    font-weight: bold;
+}
+
+
+.catalog {
+    margin-left: 215px;
+    margin-top: 20vh;
+    color: var(--accent-content);
+}
+
+.catalog h2 {
+    font-size: 3rem;
+}
+
+.catalog hr{
+    margin-right: 2rem;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.catalog-grid img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px 10px 10px;
+}
+
+.catalog-card{
+    background-color: var(--neutral);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    color: var(--neutral-content);
+}
+
+.catalog-card:hover{
+    background-color: var(--base-content);
+    transform: translateY(-5px);
+    color: var(--base);
 }
