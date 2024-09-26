@@ -201,6 +201,30 @@ section h2 {
     transform: scale(1.05);
 }
 
+/* Testimoni Section */
+#testimoni {
+    background-color: var(--neutral-content);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background-color: var(--neutral);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    color: var(--neutral-content);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
 /* Footer */
 footer {
     background-color: #4a2c2a;
