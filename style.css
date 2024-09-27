@@ -364,6 +364,47 @@ footer {
     padding: 0;
     margin: 0;
 }
+
+#contact-main-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#contact-main-page .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1595928642581-f50f4f3453a5?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+#contact-main-page .content {
+    position: relative;
+    border: 1px solid;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    border-color: transparent;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+#contact-main-page h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .contact-bg{
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -563,8 +604,48 @@ footer {
 }
 
 /* Testimoni Section */
-.heading h2 {
+#testimonial-main-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #fff;
+}
+
+#testimonial-main-page .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+#testimonial-main-page .content {
+    position: relative;
+    border: 1px solid;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    border-color: transparent;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+#testimonial-main-page h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.heading h2 {
+    color: var(--neutral);
     font-size: 45px;
 }
 .customers-container {
@@ -574,7 +655,7 @@ footer {
     margin-top: 15px;
     margin-left: 40px;
     margin-right: 40px;
-    color: #000;
+    color: var(--base-content);
     transition: transform 0.3s ease;
 }
 .customers-container .box {
@@ -582,7 +663,7 @@ footer {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     text-align: center;
-    background-color: #DB924B;
+    background-color: var(--base);
     position: relative;
     transition: transform 0.3s;  
 }
